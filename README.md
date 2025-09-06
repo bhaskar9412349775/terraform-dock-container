@@ -16,10 +16,12 @@ Provision a **local Docker container** using **Terraform**, demonstrating Infras
 ---
 
 ## Project Structure
+```bash
 terraform-dock-container/
 ├── main.tf # Terraform configuration file
 ├── terraform.tfstate # Terraform state file (generated after apply)
 └── README.md # Project documentation
+```
 ---
 ## Steps Performed
 
@@ -27,7 +29,7 @@ terraform-dock-container/
 ```bash
 sudo apt update
 sudo apt install terraform 
-
+```
 ### 2.Created main.tf
 
 ### 3.Ran Terraform Commands
@@ -35,18 +37,19 @@ sudo apt install terraform
 terraform init     # Initialize Terraform provider
 terraform plan     # Preview the resources to be created
 terraform apply    # Provision the Docker container
-
+```
 ### 4.Verified Nginx Container
 ```bash
 docker ps
-
-### 5.Visit 
+```
+### 5.Visit
+```bash
  http://localhost:8081
-
+```
 ### 6.Destroyed Infrastructure
 ```bash
 terraform destroy
-
+```
 ## Screenshots are available
 
 # THANK YOU
